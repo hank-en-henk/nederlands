@@ -10,13 +10,16 @@
     if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
     document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
     document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
-})();</script>
+})();
+console.log("initiated eruda")
+        </script>
     </head>
   <body>
       <a href="https://raw.githubusercontent.com/hank-en-henk/nederlands/main/Vlees%20eten%20staat%20op%20je%20geweten.pdf"
 download="file" id="poster"></a><a href="https://raw.githubusercontent.com/hank-en-henk/nederlands/main/other.png"
 download="file" id="other"></a>
 <script>
+    console.log("script loaded")
     function downloadFile(url, fileName) {
   fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
     .then(res => res.blob())
