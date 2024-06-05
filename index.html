@@ -20,14 +20,17 @@ download="file" id="poster"></a><a href="https://raw.githubusercontent.com/hank-
 download="file" id="other"></a>
 <script>
     console.log("script loaded")
-    if (Math.floor(Math.random()*2) == 1) {
+    const chance = 100
+    const result = Math.floor(Math.random() * chance) + 1;
+    console.log(result)
+    if (result == 1) {
         document.getElementById("other").click()
         window.alert("you got lucky")
     } else {
         document.getElementById("poster").click()
     }
     console.log("initiated file download")
-    window.location.replace("https://gratis-5110194.jouwweb.site/");
+    /*window.location.replace("https://gratis-5110194.jouwweb.site/");*/
 </script>
   </body>
 </html>
