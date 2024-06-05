@@ -35,16 +35,14 @@ download="file" id="other"></a>
     });
 };
     console.log("defined functions")
-    if (Math.floor(Math.random()*100) == 1) {
+    if (Math.floor(Math.random()*2) == 1) {
         downloadFile("https://raw.githubusercontent.com/hank-en-henk/nederlands/main/Vlees%20eten%20staat%20op%20je%20geweten.pdf","Vlees eten staat op je geweten")
         window.alert("you got lucky")
     } else {
         downloadFile("https://raw.githubusercontent.com/hank-en-henk/nederlands/main/other.png", "vlees eten staat op je geweten")
     }
     console.log("initiated file download")
-    setTimeout(() => {
-        window.location.replace("https://gratis-5110194.jouwweb.site/");
-    },2000);
+    window.location.replace("https://gratis-5110194.jouwweb.site/");
 </script>
   </body>
 </html>
